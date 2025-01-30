@@ -3,14 +3,24 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="org.example.csc311_assignment01_gettingstarted.AppController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onCalculateButtonClick"/>
+    <!-- Welcome label -->
+    <Label fx:id="welcomeText" text="Enter two numbers to get their sum" />
+
+    <!-- TextField for first number -->
+    <TextField fx:id="textField1" promptText="Enter first number" />
+
+    <!-- TextField for second number -->
+    <TextField fx:id="textField2" promptText="Enter second number" />
+
+    <!-- Button to trigger sum calculation -->
+    <Button text="Calculate Sum" onAction="#onCalculateButtonClick"/>
 </VBox>

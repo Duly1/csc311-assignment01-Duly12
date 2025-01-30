@@ -3,3 +3,14 @@
     -fx-padding: 10;
     -fx-spacing: 10;
 }
+
+/* Set the background color to light blue */
+.root {
+    -fx-background-color: lightblue;
+}
+
+/* Set the button color to red */
+.button {
+    -fx-background-color: red;
+    -fx-text-fill: white; /* Make the text on the button white */
+}
